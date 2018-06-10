@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/welcome_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay"-->
+        <!--android:visibility="gone"-->
+        <!--app:elevation="0dp">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar_login"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:contentInsetEnd="0dp"-->
+            <!--app:contentInsetStart="0dp"-->
+            <!--app:titleTextAppearance="@style/Toolbar.TitleText" />-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black_1f1f1f"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_main_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.0">
+
+            <RadioButton
+                android:id="@+id/rbtn_main_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:button="@null"
+                android:clickable="false"
+                android:drawableTop="@drawable/home_page_menu_home_radio_selector"
+                android:gravity="center"
+                android:text="@string/dynamic"
+                android:textColor="@drawable/home_page_menu_txt_color_selector"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_main_circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.0">
+
+            <RadioButton
+                android:id="@+id/rbtn_main_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:clickable="false"
+                android:drawableTop="@drawable/home_page_menu_home_circle_selector"
+                android:gravity="center"
+                android:text="@string/meet"
+                android:textColor="@drawable/home_page_menu_txt_color_selector"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_main_release"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0"
+            android:src="@drawable/release" />
+
+        <RelativeLayout
+            android:id="@+id/rl_main_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.0">
+
+            <RadioButton
+                android:id="@+id/rbtn_main_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:clickable="false"
+                android:drawableTop="@drawable/home_page_menu_home_chat_selector"
+                android:gravity="center"
+                android:text="@string/chat"
+                android:textColor="@drawable/home_page_menu_txt_color_selector"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:id="@+id/tv_main_chat_unread"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/rbtn_main_chat"
+                android:background="@drawable/shape_red_unread"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_main_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.0">
+
+            <RadioButton
+                android:id="@+id/rbtn_main_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:clickable="false"
+                android:drawableTop="@drawable/home_page_menu_home_my_selector"
+                android:gravity="center|bottom"
+                android:text="@string/my"
+                android:textColor="@drawable/home_page_menu_txt_color_selector"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+    </RadioGroup>
+</LinearLayout>

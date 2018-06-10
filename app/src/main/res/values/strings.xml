@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SecretBase-Android</string>
+
+
+    <string name="home">首页</string>
+    <string name="circle">圈子</string>
+    <string name="dynamic">动态</string>
+    <string name="meet">遇见</string>
+    <string name="friend">交友</string>
+    <string name="chat">聊天</string>
+    <string name="my">我的</string>
+    <string name="recommend">推荐</string>
+    <string name="my_concern">我的关注</string>
+    <string name="concern">关注</string>
+    <string name="double_click_exit_tint">再次点击退出</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="input_telephone">输入您的号码</string>
+    <string name="input_password">输入您的密码</string>
+    <string name="identifying_code">输入您的验证码</string>
+
+    <string name="send_identifying_code">发送验证码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="http_error">网络错误</string>
+    <string name="unKnown_error">未知错误</string>
+
+</resources>
